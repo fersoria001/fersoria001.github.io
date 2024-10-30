@@ -1,0 +1,35 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  border-radius: calc(var(--radius) - 2px);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.button:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 50%;
+}
+
+.variant {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+.size {
+  height: 2.5rem;
+  padding: 1rem 0.5rem;
+}
+.variant:hover {
+  background-color: var(--primary) / 0.9;
+}

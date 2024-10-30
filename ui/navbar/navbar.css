@@ -1,0 +1,37 @@
+/* navbar */
+.navbar {
+  background-color: var(--muted);
+  color: var(--muted-foreground);
+  display: flex;
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-bottom-color: var(--slate-200);
+  border-bottom-width: 1px;
+  padding: 0.5rem;
+  height: 70px;
+  align-items: center;
+}
+
+.navbar-brand {
+  flex-shrink: 0;
+  font-weight: bold;
+  align-self: center;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (width < 768px) {
+  .navbar-brand {
+    margin-bottom: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

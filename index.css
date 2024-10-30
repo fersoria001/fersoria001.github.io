@@ -1,0 +1,23 @@
+.project-image {
+}
+.project {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+  align-items: center;
+}
+.paragraph {
+  line-height: 1.75rem;
+  margin-top: 1.5rem;
+}
+@media (width >= 768px) {
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+  .project-image {
+    max-width: 640px;
+  }
+}

@@ -1,26 +1,20 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<link rel="stylesheet" href="modern-normalize.css" />
-<link rel="stylesheet" href="./ui/card/card.css" />
+<link rel="stylesheet" href="/modern-normalize.css" />
+<link rel="stylesheet" href="/ui/card/card.css" />
 <div class="card">
-
-    <div>
+    <div class="header">
+      <slot name="header">
         <h3 class="title">
             <slot name="title"></slot>
         <h3>
-        <p class="description">
-            <slot name="description"></slot>
-        </p> 
+        <slot name="description"></slot>
+      </slot>
     </div>
 
-    <div class="content">
       <slot name="content"></slot>
-    </div>
 
-    <div class="footer">
-        <slot name="footer"></slot>
-    </div>
-
+    <slot name="footer"></slot>
 </div>
 `;
 export default class Card extends HTMLElement {

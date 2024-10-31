@@ -1,0 +1,136 @@
+.resume {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+.resume > * + * {
+  margin-top: 1.5rem;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-avatar {
+  display: flex;
+  width: 6rem;
+  height: 6rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.resume-subject {
+  text-align: center;
+}
+
+.resume-name {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.resume-profession {
+  color: hsl(var(--muted-foreground));
+}
+
+.resume-contact {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.resume-content > * + * {
+  margin-top: 1.5rem;
+}
+
+.resume-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.resume-experience > * + * {
+  margin-top: 1rem;
+}
+
+.resume-experience > h3 {
+  font-weight: 500;
+}
+
+.resume-experience > p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.resume-experience > ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}
+
+.resume-experience > ul > li + li {
+  margin-top: 0.25rem;
+}
+
+.resume-education > h3 {
+  font-weight: 500;
+}
+
+.resume-education > p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--muted-foreground));
+}
+
+.resume-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  border-color: transparent;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.badge:hover {
+  background-color: hsl(var(--primary) / 0.8);
+}
+
+.badge:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+.separator {
+  flex-shrink: 0;
+  background-color: hsl(var(--border));
+  height: 1px;
+  width: 100%;
+}
+
+@media (width >= 460px) {
+  .resume-header {
+    flex-direction: row;
+  }
+  .resume-subject {
+    text-align: left;
+  }
+}

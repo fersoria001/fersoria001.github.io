@@ -1,7 +1,7 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<link rel="stylesheet" href="modern-normalize.css" />
-<link rel="stylesheet" href="./ui/layout/layout.css" />
+<link rel="stylesheet" href="/modern-normalize.css" />
+<link rel="stylesheet" href="/ui/layout/layout.css" />
 <body>
   <header class="header">
     <nav-bar></nav-bar>

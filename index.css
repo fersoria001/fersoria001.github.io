@@ -8,14 +8,13 @@
   gap: 1.5rem;
   align-items: center;
 }
-.paragraph {
-  line-height: 1.75rem;
-  margin-top: 1.5rem;
+.project-links {
+  margin: 0 auto;
 }
 @media (width >= 768px) {
   .project {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   .project-image {
     max-width: 640px;

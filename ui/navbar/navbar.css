@@ -1,11 +1,11 @@
 /* navbar */
 .navbar {
-  background-color: var(--muted);
-  color: var(--muted-foreground);
+  background-color: hsl(var(--muted));
+  color: hsl(var(--muted-foreground));
   display: flex;
   justify-content: space-between;
   border-bottom-style: solid;
-  border-bottom-color: var(--slate-200);
+  border-bottom-color: hsl(var(--slate-200));
   border-bottom-width: 1px;
   padding: 0.5rem;
   height: 70px;

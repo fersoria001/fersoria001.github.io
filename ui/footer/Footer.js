@@ -1,12 +1,12 @@
 const template = document.createElement("template");
 template.innerHTML = `
-<link rel="stylesheet" href="modern-normalize.css" />
-<link rel="stylesheet" href="./ui/footer/footer.css" />
+<link rel="stylesheet" href="/modern-normalize.css" />
+<link rel="stylesheet" href="/ui/footer/footer.css" />
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-buttons">
-        <button class="button button-ghost button-icon">
-            <a href="#">
+        <custom-button variant="ghost" size="icon">
+            <a href="https://github.com/fersoria001/">
                 <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -22,9 +22,9 @@ template.innerHTML = `
                     <path d="M9 18c-4.51 2-5-2-7-2"/>
                 </svg>
             </a>
-        </button>
-        <button class="button button-ghost button-icon">
-            <a href="#">
+        </custom-button>
+        <custom-button variant="ghost" size="icon">
+            <a href="https://www.linkedin.com/in/fernandosoria1t/">
                 <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 width="24" height="24" 
@@ -40,9 +40,9 @@ template.innerHTML = `
                     <circle cx="4" cy="4" r="2"/>
                 </svg>
             </a>
-        </button>
-        <button class="button button-ghost button-icon">
-            <a href="#">
+        </custom-button>
+        <custom-button variant="ghost" size="icon">
+            <a href="https://www.instagram.com/fersoria.1/">
                 <svg 
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -59,22 +59,21 @@ template.innerHTML = `
                     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                 </svg>
             </a>
-        </button>
+        </custom-button>
     </div>
     <p class="footer-copyright">
         © 2024 Fernando Agustín Soria. Todos los derechos reservados.
     </p>
-        
     <div class="footer-nav">
-        <button class="button button-link button-sm">
+        <custom-button variant="link" size="sm">
             <a href="#">Projects</a>
-        </button>
-        <button class="button button-link button-sm">
+        </custom-button>
+        <custom-button variant="link" size="sm">
             <a href="#">Curriculum</a>
-        </button>
-        <button class="button button-link button-sm">
+        </custom-button>
+        <custom-button variant="link" size="sm">
             <a href="#">Contact</a>
-        </button>
+        </custom-button>
     </div>
   </div>
 </footer>

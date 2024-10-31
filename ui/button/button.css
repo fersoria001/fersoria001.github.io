@@ -1,4 +1,7 @@
 .button {
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -17,19 +20,6 @@
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 .button:disabled {
   opacity: 50%;
-}
-
-.variant {
-  background-color: var(--primary);
-  color: var(--primary-foreground);
-}
-.size {
-  height: 2.5rem;
-  padding: 1rem 0.5rem;
-}
-.variant:hover {
-  background-color: var(--primary) / 0.9;
 }

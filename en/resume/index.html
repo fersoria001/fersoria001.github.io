@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando Agustín Soria portfolio</title>
+    <script src="/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/modern-normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <lay-out>
+    <div slot="main">
+      <div class="resume">
+        <my-card>
+          <div slot="header" class="resume-header">
+            <div class="resume-avatar">
+              <img class="responsive" src="/public/assets/jpg/Fernando.jpg" />
+            </div>
+            <div class="resume-subject">
+              <h3 slot="title" class="resume-name">Fernando Agustín Soria</h3>
+              <p class="resume-profession">Software developer</p>
+              <p class="resume-contact">
+                bercho001@gmail.com | (+54 294) 4781823
+              </p>
+            </div>
+          </div>
+          <div slot="content" class="resume-content">
+            <section>
+              <h2 class="resume-subtitle">Summary</h2>
+              <p>
+                Experienced software developer with a passion for creating
+                efficient and scalable applications. Skilled in JavaScript,
+                React, and Node.js.
+              </p>
+            </section>
+
+            <div class="separator"></div>
+
+            <section>
+              <h2 class="resume-subtitle">Experience</h2>
+              <div class="resume-experience">
+                <div>
+                  <h3>Software engineering intern - Gaotek Inc.</h3>
+                  <p>Apr 2023 - Oct 2023</p>
+                  <ul>
+                    <li>
+                      Marketing and SEO researching and analysis for potential
+                      website development.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
+            <div class="separator"></div>
+
+            <section>
+              <h2 class="resume-subtitle">Education</h2>
+              <div class="resume-education">
+                <h3>Computer Engineering</h3>
+                <p>Universidad Nacional de Río Negro, 2022</p>
+              </div>
+              <div class="resume-education">
+                <h3>Bachelor of Kinesiology and Physiotherapy</h3>
+                <p>Universidad Nacional de Córdoba, 2016</p>
+              </div>
+            </section>
+            <div class="separator"></div>
+          </div>
+          <div slot="footer">
+            <section>
+              <h2 class="resume-subtitle">Skills</h2>
+              <div class="resume-skills">
+                <div class="badge">JavaScript</div>
+                <div class="badge">React</div>
+                <div class="badge">Node.js</div>
+                <div class="badge">TypeScript</div>
+                <div class="badge">Git</div>
+                <div class="badge">RESTful APIs</div>
+                <div class="badge">SQL</div>
+                <div class="badge">MongoDB</div>
+              </div>
+            </section>
+          </div>
+        </my-card>
+      </div>
+    </div>
+  </lay-out>
+</html>

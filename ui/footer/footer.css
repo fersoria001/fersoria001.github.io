@@ -1,5 +1,6 @@
 .footer {
   border-top: 1px;
+  background-color: hsl(var(--muted));
 }
 
 .footer-content {
@@ -54,8 +55,8 @@
 }
 
 .button-ghost:hover {
-  background-color: var(--accent);
-  color: var(--accent-foreground);
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
 }
 
 .button-icon {
@@ -64,7 +65,7 @@
 }
 
 .button-link {
-  color: var(--primary);
+  color: hsl(var(--primary));
   text-underline-offset: 4px;
 }
 
@@ -89,7 +90,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   line-height: 2;
-  color: var(--muted-foreground);
+  color: hsl(var(--muted-foreground));
 }
 
 .footer-nav {

@@ -66,7 +66,7 @@ template.innerHTML = `
     </p>
     <div class="footer-nav">
         <custom-button variant="link" size="sm">
-            <a href="/">Projects</a>
+            <a href="/en/projects">Projects</a>
         </custom-button>
         <custom-button variant="link" size="sm">
             <a href="/en/resume">Resume</a>

@@ -3,7 +3,11 @@ template.innerHTML = `
 <link rel="stylesheet" href="/modern-normalize.css" />
 <link rel="stylesheet" href="/ui/navbar/navbar.css" />
 <nav class="navbar">
-  <div class="navbar-brand">Fernando Agustín Soria</div>
+  <div class="navbar-brand">
+    <a href="/">
+      Fernando Agustín Soria
+    </a>
+  </div>
   <ul class="navbar-links" role="list">
     <li>
       <custom-button variant="link" size="sm">
@@ -12,7 +16,7 @@ template.innerHTML = `
     </li>
     <li>
       <custom-button variant="link" size="sm">
-        <a href="/">Projects</a>
+        <a href="/en/projects">Projects</a>
       </custom-button>
     </li>
     <li>

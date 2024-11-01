@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernando Agustín Soria portfolio</title>
+    <script src="/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/modern-normalize.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <lay-out>
+    <div slot="main">
+      <div class="project">
+        <img
+          src="/public/assets/jpg/gocomplaint.jpg"
+          class="responsive project-image"
+        />
+        <my-card>
+          <h3 slot="title">Go Complaint</h3>
+          <p slot="description">
+            A complaint management system with additional tools to organize the
+            teams. Programmed in Next.js 14 with a GraphQL API programmed in Go
+            using PostgreSQL as database. Currently the backend API is
+            unavailable due to maintenance costs it can be reviewed in the
+            project repository.
+          </p>
+          <div slot="footer">
+            <div class="project-links">
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://www.go-complaint.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website preview
+                </a>
+              </custom-button>
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://github.com/fersoria001/e-commerce/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github repository
+                </a>
+              </custom-button>
+            </div>
+          </div>
+        </my-card>
+      </div>
+      <div class="project">
+        <img
+          src="/public/assets/jpg/pctech.jpg"
+          class="responsive project-image"
+        />
+        <my-card>
+          <h3 slot="title">pcTech</h3>
+          <p slot="description">
+            A simulated e-commerce website of a non-existent tech store with
+            payment system and management dashboard. Programmed entirely in
+            Next.js 14 taking advantage of existent libraries such as Auth0 for
+            identity and authentication and Stripe for payments. The main store
+            uses MongoDB as database, Redis is used to store private tokens
+            that can't be stored safely in cookies. The management dashboard
+            provides information from Google BigQuery gathered using Firebase
+            Google analytics to keep track of active users, visits and sales,
+            the payment stadistics are retrieved directly from Stripe.
+          </p>
+          <div slot="footer">
+            <div class="project-links">
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://e-commerce-fersoria001s-projects.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website preview
+                </a>
+              </custom-button>
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://github.com/fersoria001/e-commerce/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github repository
+                </a>
+              </custom-button>
+            </div>
+          </div>
+        </my-card>
+      </div>
+      <div class="project">
+        <img
+          src="/public/assets/jpg/eblog.jpg"
+          class="responsive project-image"
+        />
+        <my-card>
+          <h3 slot="title">eBlog</h3>
+          <p slot="description">
+            A simple user driven blog to write articles about many different
+            subjects such as technology or lifestyle. Programmed entirely in
+            Next.js 14, it uses Lexical from Meta as a rich-text editor,
+            Clerk.js for identity and authentication and Knock app as
+            notification system. The main database is PostgreSQL and Redis
+            is used to store temporal serialized information.
+          </p>
+          <div slot="footer">
+            <div class="project-links">
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://e-blog-fersoria001s-projects.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Website preview
+                </a>
+              </custom-button>
+              <custom-button variant="link" size="sm">
+                <a
+                  href="https://github.com/fersoria001/e-blog/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github repository
+                </a>
+              </custom-button>
+            </div>
+          </div>
+        </my-card>
+      </div>
+    </div>
+  </lay-out>
+</html>

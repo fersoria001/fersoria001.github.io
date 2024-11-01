@@ -4,17 +4,19 @@ template.innerHTML = `
 <link rel="stylesheet" href="/ui/card/card.css" />
 <div class="card">
     <div class="header">
-      <slot name="header">
         <h3 class="title">
             <slot name="title"></slot>
         <h3>
-        <slot name="description"></slot>
-      </slot>
+        <p class="description">
+          <slot name="description"></slot>
+        </p>
     </div>
-
+    <div class="content">
       <slot name="content"></slot>
-
-    <slot name="footer"></slot>
+    </div>
+    <div class="footer">
+      <slot name="footer"></slot>
+    </div>
 </div>
 `;
 export default class Card extends HTMLElement {

@@ -11,9 +11,8 @@ template.innerHTML = `
   background-color: hsl(var(--primary) / 0.9);
 }
 .size {
-  width:100%;
   height: 2.5rem;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
 }
 </style>
 <button class="button variant size">
@@ -35,6 +34,15 @@ const sizes = {
 };
 
 const variants = {
+  secondary: `
+  .variant {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+  }
+  .variant:hover {
+    background-color: hsl(var(--secondary) / 0.8)
+  }
+  `,
   outline: `.variant {
     border-width: 1px;
     border-color: hsl(var(--input));

@@ -68,6 +68,18 @@ export default class Button extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.replaceChildren(template.content.cloneNode(true));
+
+    this.shadowRoot
+      .querySelector("button")
+      .addEventListener("click", (event) => {
+        if (this.getAttribute("type") === "submit") {
+          const form = this.closest("form");
+          if (form) {
+            event.preventDefault();
+            form.requestSubmit();
+          }
+        }
+      });
   }
 
   attributeChangedCallback(name, oldValue, newValue) {

@@ -4,8 +4,7 @@
   color: hsl(var(--muted-foreground));
   display: flex;
   justify-content: space-between;
-  border-bottom-style: solid;
-  border-bottom-color: hsl(var(--slate-200));
+  border-bottom-color: hsl(var(--border));
   border-bottom-width: 1px;
   padding: 0.5rem;
   height: 70px;

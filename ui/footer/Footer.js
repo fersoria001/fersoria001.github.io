@@ -66,13 +66,13 @@ template.innerHTML = `
     </p>
     <div class="footer-nav">
         <custom-button variant="link" size="sm">
-            <a href="#">Projects</a>
+            <a href="/">Projects</a>
         </custom-button>
         <custom-button variant="link" size="sm">
-            <a href="#">Curriculum</a>
+            <a href="/en/resume">Resume</a>
         </custom-button>
         <custom-button variant="link" size="sm">
-            <a href="#">Contact</a>
+            <a href="/en/contact">Contact</a>
         </custom-button>
     </div>
   </div>

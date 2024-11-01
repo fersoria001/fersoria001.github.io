@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fernando Agustín Soria portfolio</title>
     <script src="/main.js" type="module" defer></script>
+    <script src="index.js" type="module" defer></script>
     <link rel="stylesheet" href="/global.css" />
     <link rel="stylesheet" href="/modern-normalize.css" />
     <link rel="stylesheet" href="index.css" />
   </head>
   <lay-out>
     <div slot="main" class="contact">
+      <toast-alert></toast-alert>
       <h1 class="contact-title">Contact</h1>
       <div class="contact-card-container">
         <my-card>
@@ -21,7 +23,7 @@
             </p>
           </div>
           <div slot="content">
-            <form class="contact-form">
+            <form id="contact-form" class="contact-form">
               <div class="contact-form-input-group">
                 <label class="contact-form-label" for="name">Name</label>
                 <input
@@ -32,6 +34,7 @@
                   placeholder="Your name"
                   required
                 />
+                <p id="name-error" class="error hidden"></p>
               </div>
               <div class="contact-form-input-group">
                 <label class="contact-form-label" for="email">Email</label>
@@ -43,6 +46,7 @@
                   placeholder="your@email.com"
                   required
                 />
+                <p id="email-error" class="error hidden"></p>
               </div>
               <div class="contact-form-input-group">
                 <label class="contact-form-label" for="message">Message</label>
@@ -53,6 +57,7 @@
                   placeholder="Your message here..."
                   required
                 ></textarea>
+                <p id="message-error" class="error hidden"></p>
               </div>
               <custom-button type="submit" class="contact-form-submit-button">
                 Send
